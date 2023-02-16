@@ -8,8 +8,9 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import { Avatar } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const Header = () => {
-  const [inputSearch, setInputSearch] = useState();
+function Header() {
+  const [inputSearch, setInputSearch] = useState("");
+
   return (
     <div className="header">
       <div className="header__left">
@@ -18,7 +19,7 @@ const Header = () => {
           <img
             className="header__logo"
             src="https://static.vecteezy.com/system/resources/previews/003/206/623/original/youtube-editorial-app-icon-free-vector.jpg"
-            alt="유툽이미지"
+            alt=""
           />
         </Link>
       </div>
@@ -45,6 +46,6 @@ const Header = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Header;

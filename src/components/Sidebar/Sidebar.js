@@ -11,21 +11,22 @@ import WatchLaterIcon from "@mui/icons-material/WatchLater";
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const Sidebar = () => {
+function Sidebar() {
   return (
     <div className="sidebar">
       <SidebarRow selected Icon={HomeIcon} title="Home" />
       <SidebarRow Icon={WhatshotIcon} title="Trending" />
       <SidebarRow Icon={SubscriptionsIcon} title="Subscription" />
       <hr />
-      <SidebarRow icon={VideoLibraryIcon} title="Library" />
-      <SidebarRow icon={HistoryIcon} title="History" />
-      <SidebarRow icon={OndemandVideoIcon} title="Your Videos" />
-      <SidebarRow icon={WatchLaterIcon} title="Watch Later" />
-      <SidebarRow icon={ThumbUpOffAltIcon} title="Liked Videos" />
-      <SidebarRow icon={ExpandMoreIcon} title="Show more" />
+      <SidebarRow Icon={VideoLibraryIcon} title="Library" />
+      <SidebarRow Icon={HistoryIcon} title="History" />
+      <SidebarRow Icon={OndemandVideoIcon} title="Your Videos" />
+      <SidebarRow Icon={WatchLaterIcon} title="Watch Later" />
+      <SidebarRow Icon={ThumbUpOffAltIcon} title="Liked Videos" />
+      <SidebarRow Icon={ExpandMoreIcon} title="Show More" />
+      <hr />
     </div>
   );
-};
+}
 
 export default Sidebar;
